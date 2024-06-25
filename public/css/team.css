@@ -1,0 +1,129 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    /*background-color: #ff5454;*/
+    border-radius: 5px;
+}
+
+.role-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-top: 4em;
+}
+
+.role-section .item {
+    position: relative;
+    margin: 0 20px;
+    text-align: center;
+}
+
+.item img {
+    width: 250px;
+    height: 436px;
+    object-fit: cover;
+    border-radius: 5%;
+    filter: grayscale(100%);
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 0, 0, 0.7);
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+    transform: translateY(100%);
+    transition: transform 0.5s ease;
+}
+
+.item:hover .overlay,
+.item.show .overlay {
+    transform: translateY(0);
+}
+
+.info {
+    padding: 10px;
+}
+
+.name {
+    font-weight: bold;
+}
+
+.role {
+    font-style: italic;
+}
+
+.history {
+    display: flex;
+    width: 100%;
+    height: 50%;
+    background-color: #ff373c;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 5em;
+}
+
+.text {
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial;
+    margin-left: 3em;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+.photo {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 15em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-radius: 5px;
+    margin-left: 7em;
+}
+
+.photo img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 5px;
+}
+
+.teamPhoto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team {
+    margin-top: 5em;
+    width: 1300px;
+    height: 640px;
+    margin-left: 2em;
+}
+
+.teamContainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 14em;
+}
+
+.teamresultats, .teamClassement {
+    margin-right: 1em;
+}
+
+.box {
+    background-color: red;
+    width: 30em;
+    height: 20em;
+    margin-bottom: 1em;
+    border-radius: 5px;
+}

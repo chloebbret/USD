@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../css/menu.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/footer.css">
+<!--    <link rel="stylesheet" href="footer.php">-->
     <title>USD</title>
 </head>
 <body>
@@ -31,5 +33,8 @@
     <a href="../pages/contact.php" class="menu-item" style="margin-top: 7px;">Contact</a>
     <a href="https://usd.kreanie.fr" target="_blank" class="menu-item" style="margin-top: 7px;">Boutique</a>
 </div>
+
+
+<script src="../js/main.js"></script>
 </body>
 </html>
