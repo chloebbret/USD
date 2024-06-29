@@ -25,35 +25,9 @@
 
         <section class="section2 clearfix">
             <div class="col2 column1 first">
-                <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
-                <div class="sec2map" style='overflow:hidden;height:550px;width:100%;'>
-                    <div id='gmap_canvas' style='height:100%;width:100%;'></div>
-                    <div><small><a href="http://embedgooglemaps.com"></a></small></div>
-                    <div><small><a href="http://freedirectorysubmissionsites.com/"></a></small></div>
-                    <style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
-                </div>
-                <script type='text/javascript'>
-                    function init_map() {
-                        var myOptions = {
-                            zoom: 14,
-                            center: new google.maps.LatLng(45.570290, 5.800790), // Coordonnées du stade municipal de Domessin
-                            mapTypeId: google.maps.MapTypeId.ROADMAP
-                        };
-                        map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
-                        marker = new google.maps.Marker({
-                            map: map,
-                            position: new google.maps.LatLng(45.5408881, 5.7007456) // Coordonnées du stade municipal de Domessin
-                        });
-                        infowindow = new google.maps.InfoWindow({
-                            content: '<strong>Stade Municipal de Domessin</strong><br>Domessin, France<br>'
-                        });
-                        google.maps.event.addListener(marker, 'click', function () {
-                            infowindow.open(map, marker);
-                        });
-                        infowindow.open(map, marker);
-                    }
-                    google.maps.event.addDomListener(window, 'load', init_map);
-                </script>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2794.4690994446614!2d5.70074557735974!3d45.540888128317214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478b05c73f44c37f%3A0xb1d599ecaa1f502!2sStade%20de%20domessin!5e0!3m2!1sfr!2sfr!4v1719505906431!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                
+            </iframe>
             </div>
 
 
