@@ -1,9 +1,24 @@
+<!-- <?php
+// $url = "https://savoie.fff.fr/recherche-clubs?scl=11381&tab=resultats&subtab=calendar&competition=412620&stage=2&group=1&label=U13%20D3";
+
+// // Récupérer le contenu de la page
+// $response = file_get_contents($url);
+
+// // Vérifier si la récupération a réussi
+// if ($response === false) {
+//     die('Erreur lors de la récupération du contenu.');
+// }
+
+// // Afficher le contenu
+// echo $response;
+?> -->
+
+
 <!doctype html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <?php include '../inc/menu.php' ?>
     <link rel="stylesheet" href="../css/body.css">
@@ -46,8 +61,11 @@
 
 <div class="teamContainer">
     <div class="teamresultats">
-        <div class="box"></div>
-        <div class="box"></div>
+        <div class="box">
+        </div>
+        <div class="box">
+            <?php echo file_get_contents("https://savoie.fff.fr/recherche-clubs?scl=11381&tab=resultats&subtab=calendar&competition=412620&stage=2&group=1&label=U13%20D3"); ?>
+        </div>
     </div>
 
     <div class="teamClassement">
@@ -55,14 +73,7 @@
     </div>
 </div>
 
-<footer class="footer">
-    <div class="icons">
-        <a href="https://www.facebook.com/usdomessin/?locale=fr_FR" target="_blank"><i class="fab fa-facebook"></i></a>
-        <a href="../pages/contact.php"><i class="fa-solid fa-comments"></i></a>
-        <p class="company-name">
-            US DOMESSIN
-        </p>
-    </div>
-</footer>
+<?php include '../inc/footer.php' ?>
+
 </body>
 </html>

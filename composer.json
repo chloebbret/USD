@@ -1,0 +1,15 @@
+{
+    "name": "kvong/usd",
+    "autoload": {
+        "psr-4": {
+            "Kvong\\Usd\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Kenzo VONGKINGKEO",
+            "email": "freeken69@gmail.com"
+        }
+    ],
+    "require": {}
+}

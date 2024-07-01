@@ -62,19 +62,7 @@
     </div>
 </div>
 
-<footer class="footer">
-    <div class="icons">
-        <a href="https://www.facebook.com/usdomessin/?locale=fr_FR" target="_blank"><i class="fab fa-facebook"></i></a>
-        <a href="../pages/contact.php"><i class="fa-solid fa-comments"></i></a>
-        <p class="company-name">
-            US DOMESSIN
-        </p>
-    </div>
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/cheerio/1.0.0-rc.10/cheerio.min.js"></script>
-<script src="../js/scraper.js"></script>
+<?php include '../inc/footer.php' ?>
 
 </body>
 </html>
