@@ -53,12 +53,12 @@
 
 <div class="teamContainer">
     <div class="teamresultats">
-        <div class="box"></div>
-        <div class="box"></div>
+        <div class="box" id="resultats"></div>
+        <div class="box team-link"></div>
     </div>
 
     <div class="teamClassement">
-        <div class="box" style="height: 41em"></div>
+        <div class="box" style="height: 41em" id="classement"></div>
     </div>
 </div>
 
@@ -71,5 +71,10 @@
         </p>
     </div>
 </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cheerio/1.0.0-rc.10/cheerio.min.js"></script>
+<script src="../js/scraper.js"></script>
+
 </body>
 </html>
