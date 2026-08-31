@@ -53,16 +53,27 @@ h1{
 
 @keyframes slide {
     0%{
-        top:0;
+        top: 4rem;
     }
-    25%{
+    25% {
+        top: 0rem;
+    }
+    50% {
         top: -4rem;
     }
-    50%{
+    75% {
         top: -8rem;
     }
-    72.5%{
+    95%{
         top: -12.25rem;
+        opacity: 1;
+    }
+    96% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+        top: 0;
     }
 }
 
@@ -90,16 +101,27 @@ h1{
 
     @keyframes slide-mob {
         0%{
-            top:0;
+            top: 4rem;
         }
-        25%{
+        25% {
+            top: 0rem;
+        }
+        50% {
             top: -2.125rem;
         }
-        50%{
+        75% {
             top: -4.25rem;
         }
-        72.5%{
+        95%{
             top: -6.375rem;
+            opacity: 1;
+        }
+        96% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 0;
+            top: 0;
         }
     }
 }

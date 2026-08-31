@@ -10,6 +10,12 @@ class ComposerStaticInit879a0580b013e0cb620d15a2ac3f6004
         'K' => 
         array (
             'Kvong\\Usd\\' => 10,
+class ComposerStaticInit453a843ba84ee585f27d014e6709ae5a
+{
+    public static $prefixLengthsPsr4 = array (
+        'P' => 
+        array (
+            'PHPMailer\\PHPMailer\\' => 20,
         ),
     );
 
@@ -27,6 +33,9 @@ class ComposerStaticInit879a0580b013e0cb620d15a2ac3f6004
             array (
                 0 => __DIR__ . '/..' . '/curl/curl/src',
             ),
+        'PHPMailer\\PHPMailer\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/phpmailer/phpmailer/src',
         ),
     );
 
@@ -41,6 +50,9 @@ class ComposerStaticInit879a0580b013e0cb620d15a2ac3f6004
             $loader->prefixDirsPsr4 = ComposerStaticInit879a0580b013e0cb620d15a2ac3f6004::$prefixDirsPsr4;
             $loader->prefixesPsr0 = ComposerStaticInit879a0580b013e0cb620d15a2ac3f6004::$prefixesPsr0;
             $loader->classMap = ComposerStaticInit879a0580b013e0cb620d15a2ac3f6004::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit453a843ba84ee585f27d014e6709ae5a::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit453a843ba84ee585f27d014e6709ae5a::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit453a843ba84ee585f27d014e6709ae5a::$classMap;
 
         }, null, ClassLoader::class);
     }

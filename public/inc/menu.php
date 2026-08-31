@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -12,13 +13,22 @@
     <title>USD</title>
 </head>
 <body>
-<div class="navbar">
-    <a href="../pages/accueil.php" class="menu-item" style="font-size: 32px; font-weight: bold">US DOMESSIN</a>
-    <a href="../pages/club.php" class="menu-item" style="margin-left: 22px; margin-top: 7px;">Club</a>
-    <div class="dropdown">
-        <button class="dropbtn menu-item" style="margin-top: 7px;">Equipes
 
+
+<div class="navbar">
+    <a href="../pages/accueil.php" class="menu-item" style="font-size:32px;font-weight:bold">
+        US DOMESSIN
+    </a>
+
+    <a href="../pages/club.php" class="menu-item" style="margin-left:22px;margin-top:7px;">
+        Club
+    </a>
+
+    <div class="dropdown">
+        <button class="dropbtn menu-item" style="margin-top:7px;">
+            Equipes
         </button>
+
         <div class="dropdown-content">
             <a href="../pages/u9.php">U9</a>
             <a href="../pages/u10-u11.php">U10 - U11</a>
@@ -38,3 +48,14 @@
 <script src="../js/main.js"></script>
 </body>
 </html>
+
+
+    <a href="../pages/contact.php" class="menu-item" style="margin-top:7px;">
+        Contact
+    </a>
+
+    <a href="https://usd.kreanie.fr" target="_blank" class="menu-item" style="margin-top:7px;">
+        Boutique
+    </a>
+</div>
+

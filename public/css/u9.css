@@ -1,0 +1,58 @@
+.coach.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Style pour la container des entraîneurs (ajustez selon vos besoins) */
+.coach-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Pour aligner les éléments horizontalement */
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.coach {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1.5s, transform 1.5s;
+    flex-basis: calc(33.33% - 10px); /* Pour créer un espacement entre les éléments */
+    margin-bottom: 20px; /* Espace entre les lignes d'entraîneurs */
+    margin-top: 70px;
+}
+
+.coach img {
+    max-width: 100%;
+}
+
+.titre {
+    margin-top: 40px;
+    background-color: red;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    /*font-weight: bold;*/
+    font-family: Georgia;
+}
+
+.separator {
+    height: 2px;
+    width: 70%;
+    margin: 0 auto; /* Cette ligne centre horizontalement la div */
+    margin-top: 80px;
+    background-color: red;
+}
+
+.photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.photo img {
+    max-width: 650px; /* Pour s'assurer que l'image ne dépasse pas la largeur de .photo */
+}
+

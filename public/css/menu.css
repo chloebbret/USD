@@ -30,7 +30,7 @@
 
 /* Ajoutez une classe spécifique pour styliser les éléments du menu principal au survol */
 .menu-item:hover {
-    border: 3px solid red;
+    color: red;
     transform: scale(1); /* Empêche le grossissement au survol */
 }
 

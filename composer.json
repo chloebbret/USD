@@ -1,4 +1,5 @@
 {
+
     "name": "kvong/usd",
     "autoload": {
         "psr-4": {
@@ -11,5 +12,9 @@
             "email": "freeken69@gmail.com"
         }
     ],
-    "require": {}
+
+    "require": {
+        "phpmailer/phpmailer": "^7.1"
+    }
+
 }

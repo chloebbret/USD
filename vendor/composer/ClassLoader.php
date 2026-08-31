@@ -46,6 +46,8 @@ class ClassLoader
     private static $includeFile;
 
     /** @var string|null */
+
+    /** @var ?string */
     private $vendorDir;
 
     // PSR-4
@@ -59,6 +61,18 @@ class ClassLoader
     private $prefixDirsPsr4 = array();
     /**
      * @var list<string>
+     * @var array[]
+     * @psalm-var array<string, array<string, int>>
+     */
+    private $prefixLengthsPsr4 = array();
+    /**
+     * @var array[]
+     * @psalm-var array<string, array<int, string>>
+     */
+    private $prefixDirsPsr4 = array();
+    /**
+     * @var array[]
+     * @psalm-var array<string, string>
      */
     private $fallbackDirsPsr4 = array();
 
@@ -73,6 +87,13 @@ class ClassLoader
     private $prefixesPsr0 = array();
     /**
      * @var list<string>
+     * @var array[]
+     * @psalm-var array<string, array<string, string[]>>
+     */
+    private $prefixesPsr0 = array();
+    /**
+     * @var array[]
+     * @psalm-var array<string, string>
      */
     private $fallbackDirsPsr0 = array();
 
@@ -81,6 +102,8 @@ class ClassLoader
 
     /**
      * @var array<string, string>
+     * @var string[]
+     * @psalm-var array<string, string>
      */
     private $classMap = array();
 
@@ -97,11 +120,22 @@ class ClassLoader
 
     /**
      * @var array<string, self>
+     * @var bool[]
+     * @psalm-var array<string, bool>
+     */
+    private $missingClasses = array();
+
+    /** @var ?string */
+    private $apcuPrefix;
+
+    /**
+     * @var self[]
      */
     private static $registeredLoaders = array();
 
     /**
      * @param string|null $vendorDir
+     * @param ?string $vendorDir
      */
     public function __construct($vendorDir = null)
     {
@@ -111,6 +145,7 @@ class ClassLoader
 
     /**
      * @return array<string, list<string>>
+     * @return string[]
      */
     public function getPrefixes()
     {
@@ -123,6 +158,8 @@ class ClassLoader
 
     /**
      * @return array<string, list<string>>
+     * @return array[]
+     * @psalm-return array<string, array<int, string>>
      */
     public function getPrefixesPsr4()
     {
@@ -131,6 +168,8 @@ class ClassLoader
 
     /**
      * @return list<string>
+     * @return array[]
+     * @psalm-return array<string, string>
      */
     public function getFallbackDirs()
     {
@@ -139,6 +178,8 @@ class ClassLoader
 
     /**
      * @return list<string>
+     * @return array[]
+     * @psalm-return array<string, string>
      */
     public function getFallbackDirsPsr4()
     {
@@ -147,6 +188,8 @@ class ClassLoader
 
     /**
      * @return array<string, string> Array of classname => path
+     * @return string[] Array of classname => path
+     * @psalm-return array<string, string>
      */
     public function getClassMap()
     {
@@ -155,6 +198,8 @@ class ClassLoader
 
     /**
      * @param array<string, string> $classMap Class to filename map
+     * @param string[] $classMap Class to filename map
+     * @psalm-param array<string, string> $classMap
      *
      * @return void
      */
@@ -174,6 +219,9 @@ class ClassLoader
      * @param string              $prefix  The prefix
      * @param list<string>|string $paths   The PSR-0 root directories
      * @param bool                $prepend Whether to prepend the directories
+     * @param string          $prefix  The prefix
+     * @param string[]|string $paths   The PSR-0 root directories
+     * @param bool            $prepend Whether to prepend the directories
      *
      * @return void
      */
@@ -184,12 +232,17 @@ class ClassLoader
             if ($prepend) {
                 $this->fallbackDirsPsr0 = array_merge(
                     $paths,
+        if (!$prefix) {
+            if ($prepend) {
+                $this->fallbackDirsPsr0 = array_merge(
+                    (array) $paths,
                     $this->fallbackDirsPsr0
                 );
             } else {
                 $this->fallbackDirsPsr0 = array_merge(
                     $this->fallbackDirsPsr0,
                     $paths
+                    (array) $paths
                 );
             }
 
@@ -199,18 +252,21 @@ class ClassLoader
         $first = $prefix[0];
         if (!isset($this->prefixesPsr0[$first][$prefix])) {
             $this->prefixesPsr0[$first][$prefix] = $paths;
+            $this->prefixesPsr0[$first][$prefix] = (array) $paths;
 
             return;
         }
         if ($prepend) {
             $this->prefixesPsr0[$first][$prefix] = array_merge(
                 $paths,
+                (array) $paths,
                 $this->prefixesPsr0[$first][$prefix]
             );
         } else {
             $this->prefixesPsr0[$first][$prefix] = array_merge(
                 $this->prefixesPsr0[$first][$prefix],
                 $paths
+                (array) $paths
             );
         }
     }
@@ -222,6 +278,9 @@ class ClassLoader
      * @param string              $prefix  The prefix/namespace, with trailing '\\'
      * @param list<string>|string $paths   The PSR-4 base directories
      * @param bool                $prepend Whether to prepend the directories
+     * @param string          $prefix  The prefix/namespace, with trailing '\\'
+     * @param string[]|string $paths   The PSR-4 base directories
+     * @param bool            $prepend Whether to prepend the directories
      *
      * @throws \InvalidArgumentException
      *
@@ -235,12 +294,14 @@ class ClassLoader
             if ($prepend) {
                 $this->fallbackDirsPsr4 = array_merge(
                     $paths,
+                    (array) $paths,
                     $this->fallbackDirsPsr4
                 );
             } else {
                 $this->fallbackDirsPsr4 = array_merge(
                     $this->fallbackDirsPsr4,
                     $paths
+                    (array) $paths
                 );
             }
         } elseif (!isset($this->prefixDirsPsr4[$prefix])) {
@@ -255,6 +316,11 @@ class ClassLoader
             // Prepend directories for an already registered namespace.
             $this->prefixDirsPsr4[$prefix] = array_merge(
                 $paths,
+            $this->prefixDirsPsr4[$prefix] = (array) $paths;
+        } elseif ($prepend) {
+            // Prepend directories for an already registered namespace.
+            $this->prefixDirsPsr4[$prefix] = array_merge(
+                (array) $paths,
                 $this->prefixDirsPsr4[$prefix]
             );
         } else {
@@ -262,6 +328,7 @@ class ClassLoader
             $this->prefixDirsPsr4[$prefix] = array_merge(
                 $this->prefixDirsPsr4[$prefix],
                 $paths
+                (array) $paths
             );
         }
     }
@@ -272,6 +339,8 @@ class ClassLoader
      *
      * @param string              $prefix The prefix
      * @param list<string>|string $paths  The PSR-0 base directories
+     * @param string          $prefix The prefix
+     * @param string[]|string $paths  The PSR-0 base directories
      *
      * @return void
      */
@@ -290,6 +359,8 @@ class ClassLoader
      *
      * @param string              $prefix The prefix/namespace, with trailing '\\'
      * @param list<string>|string $paths  The PSR-4 base directories
+     * @param string          $prefix The prefix/namespace, with trailing '\\'
+     * @param string[]|string $paths  The PSR-4 base directories
      *
      * @throws \InvalidArgumentException
      *
@@ -478,6 +549,9 @@ class ClassLoader
      * Returns the currently registered loaders keyed by their corresponding vendor directories.
      *
      * @return array<string, self>
+     * Returns the currently registered loaders indexed by their corresponding vendor directories.
+     *
+     * @return self[]
      */
     public static function getRegisteredLoaders()
     {

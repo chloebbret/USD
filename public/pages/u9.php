@@ -8,6 +8,7 @@
     <?php include '../inc/menu.php' ?>
     <link rel="stylesheet" href="../css/body.css">
     <link rel="stylesheet" href="../css/team.css">
+    <link rel="stylesheet" href="../css/u9.css">
     <title>USD</title>
 </head>
 <body>
@@ -57,5 +58,26 @@
 
 <?php include '../inc/footer.php' ?>
 
+<div class="titre">
+    <p>LES COACHS</p>
+</div>
+
+<div class="coach-container">
+    <div class="coach">
+        <img src="../img/fred.jpg" alt="Entraîneur 1">
+    </div>
+    <div class="coach">
+        <img src="../img/coco.jpg" alt="Entraîneur 2">
+    </div>
+    <!-- Ajoutez plus d'entraîneurs ici -->
+</div>
+
+<div class="separator"></div>
+
+<div class="photo">
+    <img src="../img/u9.jpg" alt="">
+</div>
+
+<script src="../js/u9.js"></script>
 </body>
 </html>

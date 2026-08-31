@@ -464,6 +464,205 @@ input:focus, textarea:focus, keygen:focus, select:focus {
 }
 @media only screen and (max-width: 420px) {
     .section1 h1 {
-        font-size: 28px;
+
+#contact {
+    width: 100%;
+    height: 100%;
     }
-}
+    
+    .section-header {
+    text-align: center;
+    margin-top: 30px;
+    padding: 40px 0;
+    font: 300 40px 'Oswald', sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    }
+    
+    .contact-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 840px;
+    margin-top: 60px;
+    /* position: fixed; */
+    left: 516px;
+    }
+    
+    /* Left contact page */
+    .form-horizontal {
+    /* float: left; */
+    max-width: 400px;
+    font-family: 'Lato';
+    font-weight: 400;
+    }
+    
+    .form-control,
+    textarea {
+    max-width: 400px;
+    background-color: #000;
+    color: #fff;
+    letter-spacing: 1px;
+    }
+    
+    .send-button {
+    margin-top: 15px;
+    height: 40px;
+    width: 400px;
+    overflow: hidden;
+    transition: all .2s ease-in-out;
+    border-radius: 8px;
+    }
+    
+    .alt-send-button {
+    width: 400px;
+    height: 34px;
+    transition: all .2s ease-in-out;
+    }
+    
+    .send-text {
+    display: block;
+    margin-top: 10px;
+    font: 700 12px 'Lato', sans-serif;
+    letter-spacing: 2px;
+    }
+    
+    .alt-send-button {
+    transform: translate3d(0px, -29px, 0px);
+    }
+    
+    /* Begin Right Contact Page */
+    .direct-contact-container {
+    max-width: 400px;
+    margin-left: 160px;
+    }
+    
+    /* Location, Phone, Email Section */
+    .contact-list {
+    list-style-type: none;
+    margin-left: -30px;
+    padding-right: 20px;
+    }
+    
+    .list-item {
+    line-height: 4;
+    color: #aaa;
+    }
+    
+    .contact-text {
+    font: 300 18px 'Lato', sans-serif;
+    letter-spacing: 1.9px;
+    color: #bbb;
+    }
+    
+    .place {
+    margin-left: 62px;
+    }
+    
+    .phone {
+    margin-left: 56px;
+    }
+    
+    .gmail {
+    margin-left: 53px;
+    }
+    
+    .contact-text a {
+    color: #bbb;
+    text-decoration: none;
+    transition-duration: 0.2s;
+    }
+    
+    .contact-text a {
+    color: #fff;
+    text-decoration: none;
+    }
+    
+    /* Social Media Icons */
+    .social-media-list {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        }
+        
+        .social-media-list .social-item {
+        width: 60px;
+        height: 60px;
+        list-style: none;
+        }
+        
+        .social-media-list .social-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        width: 60px;
+        height: 60px;
+        
+        background-color: rgb(27, 27, 27);
+        border-radius: 50%;
+        
+        color: white !important;
+        text-decoration: none !important;
+        
+        transition: background-color 0.2s ease,
+                    color 0.2s ease;
+        
+        }
+        
+        /* Hover */
+        .social-media-list .social-link {
+        background-color: red !important;
+        color: white !important;
+        text-decoration: none !important;
+        }
+        
+        /* Icônes */
+        .social-media-list .social-link i {
+        color: white !important;
+        text-decoration: none !important;
+        }
+        
+        /* Icônes au hover */
+        .social-media-list .social-link i {
+        color: white !important;
+        text-decoration: none !important;
+        }
+    
+    /* Effet de contour */
+    .social-media-list li {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    opacity: 0;
+    box-shadow: 0 0 0 1px #fff;
+    transition: all 0.2s ease-in-out;
+    pointer-events: none;
+    }
+    
+    .social-media-list li:hover {
+    opacity: 1;
+    transform: scale(1.12);
+    transition-timing-function: cubic-bezier(0.37, 0.74, 0.15, 1.65);
+    }
+    
+    .copyright {
+    font: 200 14px 'Oswald', sans-serif;
+    color: #555;
+    letter-spacing: 1px;
+    text-align: center;
+    }
+    
+    hr {
+    border-color: rgba(255, 255, 255, .6);
+    }
+}}
