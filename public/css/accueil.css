@@ -1,29 +1,30 @@
 * {
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
     font-family: 'Arvo';
 }
 
-body{
+body {
     background-color: #000;
 }
 
-.main{
-    height:100vh;
-    width:100%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
+.main {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
-h1{
-    text-align:center;
+
+h1 {
+    text-align: center;
     text-transform: uppercase;
     color: #F1FAEE;
     font-size: 5rem;
 }
 
-.roller{
+.roller {
     height: 4.125rem;
     line-height: 4rem;
     position: relative;
@@ -36,7 +37,7 @@ h1{
     color: red;
 }
 
-#spare-time{
+#spare-time {
     font-size: 1rem;
     font-style: italic;
     letter-spacing: 1rem;
@@ -52,40 +53,46 @@ h1{
 }
 
 @keyframes slide {
-    0%{
+    0% {
         top: 4rem;
     }
+
     25% {
         top: 0rem;
     }
+
     50% {
         top: -4rem;
     }
+
     75% {
         top: -8rem;
     }
-    95%{
+
+    95% {
         top: -12.25rem;
         opacity: 1;
     }
+
     96% {
         opacity: 0;
     }
+
     100% {
         opacity: 0;
         top: 0;
     }
 }
 
-@media screen and (max-width: 600px){
-    h1{
-        text-align:center;
+@media screen and (max-width: 600px) {
+    h1 {
+        text-align: center;
         text-transform: uppercase;
         color: #F1FAEE;
         font-size: 2.125rem;
     }
 
-    .roller{
+    .roller {
         height: 2.6rem;
         line-height: 2.125rem;
     }
@@ -100,25 +107,31 @@ h1{
     }
 
     @keyframes slide-mob {
-        0%{
+        0% {
             top: 4rem;
         }
+
         25% {
             top: 0rem;
         }
+
         50% {
             top: -2.125rem;
         }
+
         75% {
             top: -4.25rem;
         }
-        95%{
+
+        95% {
             top: -6.375rem;
             opacity: 1;
         }
+
         96% {
             opacity: 0;
         }
+
         100% {
             opacity: 0;
             top: 0;
@@ -131,7 +144,8 @@ h1{
     -webkit-justify-content: center;
     justify-content: center;
     margin-top: 10em;
-    margin-bottom: 5em; /* Ajoutez cette ligne pour créer un espace sous les cartes */
+    margin-bottom: 5em;
+    /* Ajoutez cette ligne pour créer un espace sous les cartes */
     transition: opacity 0.5s ease;
 }
 
@@ -156,15 +170,17 @@ h1{
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700');
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 
-*{
+* {
     box-sizing: border-box;
 }
 
-.card--1 .card__img, .card--1 .card__img--hover {
-    background-image: url("../img/benevoles.jpg") ;
+.card--1 .card__img,
+.card--1 .card__img--hover {
+    background-image: url("../img/seniorsf.jpg?v=2") !important;
 }
 
-.card--2 .card__img, .card--2 .card__img--hover {
+.card--2 .card__img,
+.card--2 .card__img--hover {
     background-image: url('../img/coachs.jpg');
 }
 
@@ -177,6 +193,7 @@ h1{
     vertical-align: middle;
     fill: #AD7D52;
 }
+
 .card__time {
     font-size: 12px;
     color: #AD7D52;
@@ -221,6 +238,7 @@ h1{
     top: 0;
 
 }
+
 .card {
     margin-right: 25px;
     transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
@@ -228,13 +246,14 @@ h1{
     position: relative;
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0px 13px 10px -7px rgba(0, 0, 0,0.1);
+    box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1);
     width: 368px;
     top: 21em;
     right: 14em;
 }
+
 .card:hover {
-    box-shadow: 0px 30px 18px -8px rgba(0, 0, 0,0.1);
+    box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
     transform: scale(1.10, 1.10);
 }
 

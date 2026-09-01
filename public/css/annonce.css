@@ -1,0 +1,36 @@
+.photoAnnonce {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.photoAnnonce img {
+    max-width: 860px;
+}
+
+.h1Annonce {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.contenuAnnonce {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: white;
+    position: relative;
+    top: 2em;
+    padding-bottom: 80px;
+    font-size: 18px;
+    line-height: 23px;
+    color: white;
+
+}
+
+.retourAccueil {
+    color: white;
+    text-decoration: none;
+}

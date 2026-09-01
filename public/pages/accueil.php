@@ -37,8 +37,8 @@
         </a>
         <div class="card__info">
             <span class="card__category"> ANNONCE </span>
-            <h3 class="card__title">Recherche de bénévoles pour la saison 2024-2025</h3>
-            <a href="https://www.facebook.com/photo.php?fbid=945691074224954&set=pb.100063522102378.-2207520000&type=3&locale=fr_FR" target="_blank" style="text-decoration: none; color: inherit">
+            <h3 class="card__title">Les féminines passent à 11 !</h3>
+            <a href="annonce1" target="_blank" style="text-decoration: none; color: inherit">
                 Voir l'annonce &nbsp; <i class="fa-solid fa-arrow-right"> </i>
             </a>
         </div>
@@ -62,15 +62,5 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="../js/main.js"></script>
-
-<footer class="footer">
-    <div class="icons">
-        <a href="https://www.facebook.com/usdomessin/?locale=fr_FR" target="_blank"><i class="fab fa-facebook"></i></a>
-        <a href="../pages/contact.php"><i class="fa-solid fa-comments"></i></a>
-        <p class="company-name">
-            US DOMESSIN
-        </p>
-    </div>
-</footer>
 </body>
 </html>
