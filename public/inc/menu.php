@@ -50,12 +50,6 @@
 </html>
 
 
-    <a href="../pages/contact.php" class="menu-item" style="margin-top:7px;">
-        Contact
-    </a>
-
-    <a href="https://usd.kreanie.fr" target="_blank" class="menu-item" style="margin-top:7px;">
-        Boutique
-    </a>
+    
 </div>
 

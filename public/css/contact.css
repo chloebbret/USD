@@ -1,323 +1,47 @@
-/*!*@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);*!*/
-
-/*!*form { max-width:420px; margin:50px auto; }*!*/
-
-/*!*.feedback-input {*!*/
-/*!*    color:white;*!*/
-/*!*    font-family: Helvetica, Arial, sans-serif;*!*/
-/*!*    font-weight:500;*!*/
-/*!*    font-size: 18px;*!*/
-/*!*    border-radius: 5px;*!*/
-/*!*    line-height: 22px;*!*/
-/*!*    background-color: transparent;*!*/
-/*!*    border:2px solid #494848;*!*/
-/*!*    transition: all 0.3s;*!*/
-/*!*    padding: 13px;*!*/
-/*!*    margin-bottom: 15px;*!*/
-/*!*    width:100%;*!*/
-/*!*    box-sizing: border-box;*!*/
-/*!*    outline:0;*!*/
-/*!*}*!*/
-
-/*!*.feedback-input:focus { border:2px solid #494848; }*!*/
-
-/*!*textarea {*!*/
-/*!*    height: 150px;*!*/
-/*!*    line-height: 150%;*!*/
-/*!*    resize:vertical;*!*/
-/*!*}*!*/
-
-/*!*[type="submit"] {*!*/
-/*!*    font-family: 'Montserrat', Arial, Helvetica, sans-serif;*!*/
-/*!*    width: 100%;*!*/
-/*!*    background: #494848;*!*/
-/*!*    border-radius:5px;*!*/
-/*!*    border:0;*!*/
-/*!*    cursor:pointer;*!*/
-/*!*    color:white;*!*/
-/*!*    font-size:24px;*!*/
-/*!*    padding-top:10px;*!*/
-/*!*    padding-bottom:10px;*!*/
-/*!*    transition: all 0.3s;*!*/
-/*!*    margin-top:-4px;*!*/
-/*!*    font-weight:700;*!*/
-/*!*}*!*/
-/*!*[type="submit"]:hover { background: #494848; }*!*/
-
-/*body {*/
-/*    margin: 0;*/
-/*    padding: 0;*/
-/*    background-color: #000;*/
-/*    padding-bottom: 100px;*/
-/*}*/
-
-/*#contact {*/
-/*    width: 100%;*/
-/*    height: 100%;*/
-/*}*/
-
-/*.section-header {*/
-/*    text-align: center;*/
-/*    margin-top: 30px;*/
-/*    padding: 40px 0;*/
-/*    font: 300 60px 'Oswald', sans-serif;*/
-/*    color: #fff;*/
-/*    text-transform: uppercase;*/
-/*    letter-spacing: 6px;*/
-/*}*/
-
-/*.contact-wrapper {*/
-/*    display: flex;*/
-/*    flex-direction: row;*/
-/*    justify-content: space-between;*/
-/*    padding: 20px;*/
-/*    max-width: 840px;*/
-/*    margin-top: 60px;*/
-/*    !* position: fixed; *!*/
-/*    position: relative;*/
-/*    left: 433px;*/
-/*}*/
-
-/*!* Left contact page *!*/
-/*.form-horizontal {*/
-/*    !*float: left;*!*/
-/*    max-width: 400px;*/
-/*    font-family: 'Lato';*/
-/*    font-weight: 400;*/
-/*}*/
-
-/*.form-control,*/
-/*textarea {*/
-/*    max-width: 400px;*/
-/*    background-color: #000;*/
-/*    color: #fff;*/
-/*    letter-spacing: 1px;*/
-/*}*/
-
-/*.send-button {*/
-/*    margin-top: 15px;*/
-/*    height: 40px;*/
-/*    width: 400px;*/
-/*    overflow: hidden;*/
-/*    transition: all .2s ease-in-out;*/
-/*    border-radius: 8px;*/
-/*}*/
-
-/*.alt-send-button {*/
-/*    width: 400px;*/
-/*    height: 34px;*/
-/*    transition: all .2s ease-in-out;*/
-/*}*/
-
-/*.send-text {*/
-/*    display: block;*/
-/*    margin-top: 10px;*/
-/*    font: 700 12px 'Lato', sans-serif;*/
-/*    letter-spacing: 2px;*/
-/*}*/
-
-/*.alt-send-button:hover {*/
-/*    transform: translate3d(0px, -29px, 0px);*/
-/*}*/
-
-/*!* Begin Right Contact Page *!*/
-/*.direct-contact-container {*/
-/*    max-width: 400px;*/
-/*    margin-left: 160px;*/
-/*}*/
-
-/*!* Location, Phone, Email Section *!*/
-/*.contact-list {*/
-/*    list-style-type: none;*/
-/*    margin-left: -30px;*/
-/*    padding-right: 20px;*/
-/*}*/
-
-/*.list-item {*/
-/*    line-height: 4;*/
-/*    color: #aaa;*/
-/*}*/
-
-/*.contact-text {*/
-/*    font: 300 18px 'Lato', sans-serif;*/
-/*    letter-spacing: 1.9px;*/
-/*    color: #bbb;*/
-/*}*/
-
-/*.place {*/
-/*    margin-left: 62px;*/
-/*}*/
-
-/*.phone {*/
-/*    margin-left: 56px;*/
-/*}*/
-
-/*.gmail {*/
-/*    margin-left: 53px;*/
-/*}*/
-
-/*.contact-text a {*/
-/*    color: #bbb;*/
-/*    text-decoration: none;*/
-/*    transition-duration: 0.2s;*/
-/*}*/
-
-/*.contact-text a:hover {*/
-/*    color: #fff;*/
-/*    text-decoration: none;*/
-/*}*/
 
 
-/*!* Social Media Icons *!*/
-/*.social-media-list {*/
-/*    position: relative;*/
-/*    font-size: 22px;*/
-/*    text-align: center;*/
-/*    width: 100%;*/
-/*    margin: 0 auto;*/
-/*    padding: 0;*/
-/*}*/
-
-/*.social-media-list li a {*/
-/*    color: #fff;*/
-/*}*/
-
-/*.social-media-list li {*/
-/*    position: relative;*/
-/*    display: inline-block;*/
-/*    height: 60px;*/
-/*    width: 60px;*/
-/*    margin: 10px 3px;*/
-/*    line-height: 60px;*/
-/*    border-radius: 50%;*/
-/*    color: #fff;*/
-/*    background-color: rgb(27,27,27);*/
-/*    cursor: pointer;*/
-/*    transition: all .2s ease-in-out;*/
-/*}*/
-
-/*.social-media-list li:after {*/
-/*    content: '';*/
-/*    position: absolute;*/
-/*    top: 0;*/
-/*    left: 0;*/
-/*    width: 60px;*/
-/*    height: 60px;*/
-/*    line-height: 60px;*/
-/*    border-radius: 50%;*/
-/*    opacity: 0;*/
-/*    box-shadow: 0 0 0 1px #fff;*/
-/*    transition: all .2s ease-in-out;*/
-/*}*/
-
-/*.social-media-list li:hover {*/
-/*    background-color: #fff;*/
-/*}*/
-
-/*.social-media-list li:hover:after {*/
-/*    opacity: 1;*/
-/*    transform: scale(1.12);*/
-/*    transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);*/
-/*}*/
-
-/*.social-media-list li:hover a {*/
-/*    color: #000;*/
-/*}*/
-
-/*.copyright {*/
-/*    font: 200 14px 'Oswald', sans-serif;*/
-/*    color: #555;*/
-/*    letter-spacing: 1px;*/
-/*    text-align: center;*/
-/*}*/
-
-/*hr {*/
-/*    border-color: rgba(255,255,255,.6);*/
-/*}*/
-
-/*!* Begin Media Queries*!*/
-/*@media screen and (max-width: 850px) {*/
-/*    .contact-wrapper {*/
-/*        display: flex;*/
-/*        flex-direction: column;*/
-/*    }*/
-/*    .direct-contact-container, .form-horizontal {*/
-/*        margin: 0 auto;*/
-/*    }*/
-
-/*    .direct-contact-container {*/
-/*        margin-top: 60px;*/
-/*        max-width: 300px;*/
-/*    }*/
-/*    .social-media-list li {*/
-/*        height: 60px;*/
-/*        width: 60px;*/
-/*        line-height: 60px;*/
-/*    }*/
-/*    .social-media-list li:after {*/
-/*        width: 60px;*/
-/*        height: 60px;*/
-/*        line-height: 60px;*/
-/*    }*/
-/*}*/
-
-/*@media screen and (max-width: 569px) {*/
-
-/*    .direct-contact-container, .form-wrapper {*/
-/*        float: none;*/
-/*        margin: 0 auto;*/
-/*    }*/
-/*    .form-control, textarea {*/
-
-/*        margin: 0 auto;*/
-/*    }*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 
 
-/*    !*.name, .email, textarea {*!*/
-/*    !*    width: 280px;*!*/
-/*    !*}*!*/
-
-/*    .direct-contact-container {*/
-/*        margin-top: 60px;*/
-/*        max-width: 280px;*/
-/*    }*/
-/*    .social-media-list {*/
-/*        left: 0;*/
-/*    }*/
-/*    .social-media-list li {*/
-/*        height: 55px;*/
-/*        width: 55px;*/
-/*        line-height: 55px;*/
-/*        font-size: 2rem;*/
-/*    }*/
-/*    .social-media-list li:after {*/
-/*        width: 55px;*/
-/*        height: 55px;*/
-/*        line-height: 55px;*/
-/*    }*/
-
-/*}*/
-
-/*@media screen and (max-width: 410px) {*/
-/*    .send-button {*/
-/*        width: 99%;*/
-/*    }*/
-/*}*/
-
-
+/* =========================================================
+   RESET
+   ========================================================= */
 
 * {
-    margin:0px;
-    padding:0px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing:border-box; -o-box-sizing:border-box; box-sizing: border-box; }
 
-.clearfix:before, .clearfix:after { display: table; content: ''; }
-.clearfix:after { clear: both; }
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+}
 
-input:focus, textarea:focus, keygen:focus, select:focus {
+body {
+    margin: 0;
+    padding: 0 0 100px;
+    background-color: #000;
+    color: #fff;
+}
+
+
+/* =========================================================
+   FOCUS
+   ========================================================= */
+
+input:focus,
+textarea:focus,
+select:focus {
     outline: none;
 }
+
+
+/* =========================================================
+   PLACEHOLDER
+   ========================================================= */
+
 ::-moz-placeholder {
     color: #666;
     font-weight: 300;
@@ -330,27 +54,39 @@ input:focus, textarea:focus, keygen:focus, select:focus {
 }
 
 
-/* Contact Form Styling */
+/* =========================================================
+   CONTAINER PRINCIPAL
+   ========================================================= */
+
 .container {
+    width: 100%;
     padding: 0 50px 70px;
 }
+
 .textcenter {
     text-align: center;
 }
+
+
+/* =========================================================
+   SECTION 1
+   ========================================================= */
+
 .section1 {
-    text-align: center;
-    display: table;
     width: 100%;
+    text-align: center;
 }
+
 .section1 .shtext {
     display: block;
     margin-top: 20px;
 }
+
 .section1 .seperator {
-    border-bottom:1px solid #a2a2a2;
-    width: 35px;
     display: inline-block;
+    width: 35px;
     margin: 20px;
+    border-bottom: 1px solid #a2a2a2;
 }
 
 .section1 h1 {
@@ -359,310 +95,768 @@ input:focus, textarea:focus, keygen:focus, select:focus {
     font-weight: normal;
 }
 
-.section2 {
-    width: 1200px;
-    margin: 25px auto;
-}
-.section2 .col2 {
-    width: 48.71%;
-}
-.section2 .col2.first {
-    float: left;
-}
-.section2 .col2.last {
-    float: right;
-}
-.section2 .col2.column2 {
-    padding: 0 30px;
-}
-.section2 span.collig {
-    color: #a2a2a2;
-    margin-right: 10px;
-    display: inline-block;
-}
-.section2 .sec2addr {
-    display: block;
-    line-height: 26px;
-}
-.section2 .sec2addr p:first-child {
-    margin-bottom: 10px;
-}
-.section2 .sec2contactform input[type="text"],
-.section2 .sec2contactform input[type="email"],
-.section2 .sec2contactform textarea {
-    padding: 18px;
-    border: 0;
-    background: #EDEDED;
-    margin: 7px 0;
-    border-radius: 5px;
-}
-.section2 .sec2contactform textarea {
-    width: 100%;
-    display: block;
-    color: #666;
-    resize:none;
-}
-.section2 .sec2contactform input[type="submit"] {
-    padding: 15px 40px;
-    color: #fff;
-    border: 0;
-    background: #f14343;
-    font-size: 16px;
-    text-transform: uppercase;
-    margin: 7px 0;
-    cursor: pointer;
-}
-.section2 .sec2contactform h3 {
-    font-weight: normal;
-    margin: 20px 0;
-    margin-top: 30px;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 19px;
-    color: #f14343;
-}
 
-/* @media querries */
-
-@media only screen and (max-width: 1266px) {
-    .section2 {
-        width: 100%;
-    }
-}
-@media only screen and (max-width: 960px) {
-    .container {
-        padding: 0 30px 70px;
-    }
-    .section2 .col2 {
-        width: 100%;
-        display: block;
-    }
-    .section2 .col2.first {
-        margin-bottom: 10px;
-    }
-    .section2 .col2.column2 {
-        padding: 0;
-    }
-    body .sec2map {
-        height: 250px !important;
-    }
-}
-@media only screen and (max-width: 768px) {
-    .section2 .sec2addr {
-        font-size: 14px;
-    }
-    .section2 .sec2contactform h3 {
-        font-size: 16px;
-    }
-    .section2 .sec2contactform input[type="text"], .section2 .sec2contactform input[type="email"], .section2 .sec2contactform textarea {
-        padding: 10px;
-        margin:3px 0;
-    }
-    .section2 .sec2contactform input[type="submit"] {
-        padding: 10px 30px;
-        font-size: 14px;
-    }
-}
-@media only screen and (max-width: 420px) {
-    .section1 h1 {
+/* =========================================================
+   CONTACT
+   ========================================================= */
 
 #contact {
     width: 100%;
-    height: 100%;
-    }
-    
-    .section-header {
+    min-height: 100%;
+}
+
+
+/* =========================================================
+   TITRE CONTACT
+   ========================================================= */
+
+.section-header {
     text-align: center;
+
     margin-top: 30px;
     padding: 40px 0;
-    font: 300 40px 'Oswald', sans-serif;
+
+    font: 300 60px 'Oswald', sans-serif;
+
     color: #fff;
+
     text-transform: uppercase;
+
     letter-spacing: 6px;
-    }
-    
-    .contact-wrapper {
+}
+
+
+/* =========================================================
+   FORMULAIRE + CARTE
+   ========================================================= */
+
+.contact-wrapper {
+
     display: flex;
+
     flex-direction: row;
-    justify-content: space-between;
-    padding: 20px;
-    max-width: 840px;
-    margin-top: 60px;
-    /* position: fixed; */
-    left: 516px;
-    }
-    
-    /* Left contact page */
-    .form-horizontal {
-    /* float: left; */
+
+    justify-content: center;
+
+    align-items: flex-start;
+
+    gap: 50px;
+
+    width: 100%;
+
+    max-width: 1100px;
+
+    margin: 30px auto 0;
+
+    position: relative;
+
+}
+
+
+/* =========================================================
+   FORMULAIRE
+   ========================================================= */
+
+.contact-form-container {
+
+    width: 400px;
+
+    flex: 0 0 400px;
+
+}
+
+
+.form-horizontal {
+
+    width: 100%;
+
     max-width: 400px;
-    font-family: 'Lato';
+
+    margin: 0;
+
+    font-family: 'Lato', Arial, sans-serif;
+
     font-weight: 400;
-    }
-    
-    .form-control,
-    textarea {
-    max-width: 400px;
-    background-color: #000;
-    color: #fff;
-    letter-spacing: 1px;
-    }
-    
-    .send-button {
-    margin-top: 15px;
-    height: 40px;
-    width: 400px;
-    overflow: hidden;
-    transition: all .2s ease-in-out;
-    border-radius: 8px;
-    }
-    
-    .alt-send-button {
-    width: 400px;
-    height: 34px;
-    transition: all .2s ease-in-out;
-    }
-    
-    .send-text {
+
+}
+
+
+.form-group {
+
+    width: 100%;
+
+    margin: 0;
+
+}
+
+
+.col-sm-12 {
+
+    width: 100%;
+
+    padding: 0;
+
+}
+
+
+/* =========================================================
+   CHAMPS
+   ========================================================= */
+
+.form-control {
+
     display: block;
-    margin-top: 10px;
-    font: 700 12px 'Lato', sans-serif;
-    letter-spacing: 2px;
-    }
-    
-    .alt-send-button {
-    transform: translate3d(0px, -29px, 0px);
-    }
-    
-    /* Begin Right Contact Page */
-    .direct-contact-container {
+
+    width: 100%;
+
     max-width: 400px;
-    margin-left: 160px;
-    }
-    
-    /* Location, Phone, Email Section */
-    .contact-list {
-    list-style-type: none;
-    margin-left: -30px;
-    padding-right: 20px;
-    }
-    
-    .list-item {
-    line-height: 4;
-    color: #aaa;
-    }
-    
-    .contact-text {
-    font: 300 18px 'Lato', sans-serif;
-    letter-spacing: 1.9px;
-    color: #bbb;
-    }
-    
-    .place {
-    margin-left: 62px;
-    }
-    
-    .phone {
-    margin-left: 56px;
-    }
-    
-    .gmail {
-    margin-left: 53px;
-    }
-    
-    .contact-text a {
-    color: #bbb;
-    text-decoration: none;
-    transition-duration: 0.2s;
-    }
-    
-    .contact-text a {
+
+    background-color: #000;
+
     color: #fff;
-    text-decoration: none;
-    }
-    
-    /* Social Media Icons */
-    .social-media-list {
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        }
-        
-        .social-media-list .social-item {
-        width: 60px;
-        height: 60px;
-        list-style: none;
-        }
-        
-        .social-media-list .social-link {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-        width: 60px;
-        height: 60px;
-        
-        background-color: rgb(27, 27, 27);
-        border-radius: 50%;
-        
-        color: white !important;
-        text-decoration: none !important;
-        
-        transition: background-color 0.2s ease,
-                    color 0.2s ease;
-        
-        }
-        
-        /* Hover */
-        .social-media-list .social-link {
-        background-color: red !important;
-        color: white !important;
-        text-decoration: none !important;
-        }
-        
-        /* Icônes */
-        .social-media-list .social-link i {
-        color: white !important;
-        text-decoration: none !important;
-        }
-        
-        /* Icônes au hover */
-        .social-media-list .social-link i {
-        color: white !important;
-        text-decoration: none !important;
-        }
-    
-    /* Effet de contour */
-    .social-media-list li {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    opacity: 0;
-    box-shadow: 0 0 0 1px #fff;
-    transition: all 0.2s ease-in-out;
-    pointer-events: none;
-    }
-    
-    .social-media-list li:hover {
-    opacity: 1;
-    transform: scale(1.12);
-    transition-timing-function: cubic-bezier(0.37, 0.74, 0.15, 1.65);
-    }
-    
-    .copyright {
-    font: 200 14px 'Oswald', sans-serif;
-    color: #555;
+
+    border: 2px solid #494848;
+
+    border-radius: 8px;
+
+    padding: 10px 13px;
+
+    font-family: Helvetica, Arial, sans-serif;
+
+    font-size: 16px;
+
     letter-spacing: 1px;
+
+    transition: border-color 0.3s ease;
+
+}
+
+
+.form-control:focus {
+
+    border-color: #777;
+
+}
+
+
+/* =========================================================
+   INPUT NOM + EMAIL
+   ========================================================= */
+
+input.form-control {
+
+    height: 40px;
+
+    margin-bottom: 20px;
+
+}
+
+
+/* =========================================================
+   TEXTAREA
+   ========================================================= */
+
+textarea.form-control {
+
+    width: 100%;
+
+    height: 203px;
+
+    min-height: 203px;
+
+    line-height: 150%;
+
+    resize: vertical;
+
+    margin-bottom: 0;
+
+}
+
+
+/* =========================================================
+   BOUTON ENVOYER
+   ========================================================= */
+
+.send-button {
+
+    display: block;
+
+    width: 100%;
+
+    max-width: 400px;
+
+    height: 40px;
+
+    margin-top: 15px;
+
+    overflow: hidden;
+
+    background: #494848;
+
+    border: 0;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    color: white;
+
+    transition: background 0.3s ease,
+                transform 0.2s ease;
+
+}
+
+
+.send-button:hover {
+
+    background: #666;
+
+}
+
+
+.alt-send-button {
+
+    width: 100%;
+
+    height: 34px;
+
+    transition: all 0.2s ease-in-out;
+
+}
+
+
+.send-text {
+
+    display: block;
+
+    margin-top: 10px;
+
+    font: 700 12px 'Lato', sans-serif;
+
+    letter-spacing: 2px;
+
+    color: #fff;
+
+}
+
+
+/* =========================================================
+   CARTE GOOGLE MAPS
+   ========================================================= */
+
+.contact-map-container {
+
+    width: 600px;
+
+    height: 450px;
+
+    flex: 0 0 600px;
+
+}
+
+
+.contact-map-container iframe {
+
+    display: block;
+
+    width: 100%;
+
+    height: 100%;
+
+    border: 0;
+
+    border-radius: 8px;
+
+}
+
+
+/* =========================================================
+   ANCIENNE SECTION 2
+   ========================================================= */
+
+.section2 {
+
+    width: 1200px;
+
+    max-width: 100%;
+
+    margin: 25px auto;
+
+}
+
+
+.section2 .col2 {
+
+    width: 48.71%;
+
+}
+
+
+.section2 .col2.first {
+
+    float: left;
+
+}
+
+
+.section2 .col2.last {
+
+    float: right;
+
+}
+
+
+.section2 .col2.column2 {
+
+    padding: 0 30px;
+
+}
+
+
+.section2 span.collig {
+
+    color: #a2a2a2;
+
+    margin-right: 10px;
+
+    display: inline-block;
+
+}
+
+
+.section2 .sec2addr {
+
+    display: block;
+
+    line-height: 26px;
+
+}
+
+
+.section2 .sec2addr p:first-child {
+
+    margin-bottom: 10px;
+
+}
+
+
+.section2 .sec2contactform input[type="text"],
+.section2 .sec2contactform input[type="email"],
+.section2 .sec2contactform textarea {
+
+    padding: 18px;
+
+    border: 0;
+
+    background: #EDEDED;
+
+    margin: 7px 0;
+
+    border-radius: 5px;
+
+}
+
+
+.section2 .sec2contactform textarea {
+
+    width: 100%;
+
+    display: block;
+
+    color: #666;
+
+    resize: none;
+
+}
+
+
+.section2 .sec2contactform input[type="submit"] {
+
+    padding: 15px 40px;
+
+    color: #fff;
+
+    border: 0;
+
+    background: #f14343;
+
+    font-size: 16px;
+
+    text-transform: uppercase;
+
+    margin: 7px 0;
+
+    cursor: pointer;
+
+}
+
+
+.section2 .sec2contactform h3 {
+
+    font-weight: normal;
+
+    margin: 20px 0;
+
+    margin-top: 30px;
+
+    border-bottom: 1px solid #ddd;
+
+    padding-bottom: 19px;
+
+    color: #f14343;
+
+}
+
+
+/* =========================================================
+   CONTACT DIRECT
+   ========================================================= */
+
+.direct-contact-container {
+
+    max-width: 400px;
+
+    margin-left: 160px;
+
+}
+
+
+.contact-list {
+
+    list-style-type: none;
+
+    margin-left: -30px;
+
+    padding-right: 20px;
+
+}
+
+
+.list-item {
+
+    line-height: 4;
+
+    color: #aaa;
+
+}
+
+
+.contact-text {
+
+    font: 300 18px 'Lato', sans-serif;
+
+    letter-spacing: 1.9px;
+
+    color: #bbb;
+
+}
+
+
+.place {
+
+    margin-left: 62px;
+
+}
+
+
+.phone {
+
+    margin-left: 56px;
+
+}
+
+
+.gmail {
+
+    margin-left: 53px;
+
+}
+
+
+.contact-text a {
+
+    color: #bbb;
+
+    text-decoration: none;
+
+    transition: color 0.2s;
+
+}
+
+
+.contact-text a:hover {
+
+    color: #fff;
+
+}
+
+
+
+
+/* =========================================================
+   HR
+   ========================================================= */
+
+hr {
+
+    border-color: rgba(255, 255, 255, 0.6);
+
+}
+
+
+/* =========================================================
+   COPYRIGHT
+   ========================================================= */
+
+.copyright {
+
+    font: 200 14px 'Oswald', sans-serif;
+
+    color: #555;
+
+    letter-spacing: 1px;
+
     text-align: center;
+
+}
+
+
+/* =========================================================
+   RESPONSIVE - PETIT ORDINATEUR
+   ========================================================= */
+
+@media only screen and (max-width: 1100px) {
+
+    .container {
+
+        padding-left: 30px;
+
+        padding-right: 30px;
+
     }
-    
-    hr {
-    border-color: rgba(255, 255, 255, .6);
+
+
+    .contact-wrapper {
+
+        gap: 30px;
+
     }
-}}
+
+
+    .contact-form-container {
+
+        width: 400px;
+
+        flex: 0 1 400px;
+
+    }
+
+
+    .contact-map-container {
+
+        width: 500px;
+
+        flex: 1 1 500px;
+
+        height: 400px;
+
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE - TABLETTE
+   ========================================================= */
+
+@media only screen and (max-width: 900px) {
+
+    .section-header {
+
+        font-size: 50px;
+
+    }
+
+
+    .contact-wrapper {
+
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 40px;
+
+        max-width: 600px;
+
+    }
+
+
+    .contact-form-container {
+
+        width: 400px;
+
+        max-width: 100%;
+
+        flex: 0 1 auto;
+
+    }
+
+
+    .form-horizontal {
+
+        width: 100%;
+
+        max-width: 400px;
+
+    }
+
+
+    .contact-map-container {
+
+        width: 100%;
+
+        max-width: 600px;
+
+        height: 400px;
+
+        flex: 0 1 auto;
+
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE - MOBILE
+   ========================================================= */
+
+@media only screen and (max-width: 600px) {
+
+    .container {
+
+        padding: 0 15px 50px;
+
+    }
+
+
+    .section-header {
+
+        font-size: 35px;
+
+        letter-spacing: 3px;
+
+        padding: 30px 0;
+
+    }
+
+
+    .contact-wrapper {
+
+        width: 100%;
+
+        margin-top: 20px;
+
+        gap: 30px;
+
+    }
+
+
+    .contact-form-container {
+
+        width: 100%;
+
+        max-width: 400px;
+
+    }
+
+
+    .form-horizontal {
+
+        width: 100%;
+
+        max-width: 100%;
+
+    }
+
+
+    .form-control {
+
+        max-width: 100%;
+
+    }
+
+
+    .send-button {
+
+        max-width: 100%;
+
+    }
+
+
+    .contact-map-container {
+
+        width: 100%;
+
+        max-width: 100%;
+
+        height: 350px;
+
+    }
+
+
+    .social-media-list {
+
+        margin-top: 30px !important;
+
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE - PETIT TÉLÉPHONE
+   ========================================================= */
+
+@media only screen and (max-width: 420px) {
+
+    .section1 h1 {
+
+        font-size: 30px;
+
+    }
+
+
+    .section-header {
+
+        font-size: 28px;
+
+        letter-spacing: 2px;
+
+    }
+
+
+    .contact-map-container {
+
+        height: 280px;
+
+    }
+
+
+    .social-media-list {
+
+        gap: 8px;
+
+    }
+
+
+    .social-media-list .social-item,
+    .social-media-list .social-link {
+
+        width: 55px !important;
+
+        height: 55px !important;
+
+    }
+
+}
+

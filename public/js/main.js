@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 // ACCUEIL
-$(document).ready(function() {
+document.ready(function() {
     // Fonction pour vérifier si l'élément est en vue
     function isElementInViewport(el) {
         var rect = el.getBoundingClientRect();
