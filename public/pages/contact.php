@@ -88,8 +88,7 @@
                               placeholder="MESSAGE" 
                               name="message" 
                               id="message" 
-                              required >
-                    </textarea> 
+                              required></textarea> 
                     <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND" > 
                         <div class="alt-send-button"> <span class="send-text">ENVOYER</span> </div> 
                     </button> 
@@ -140,8 +139,11 @@
             
         .then(response => response.text()) 
         .then(data => { console.log("envoyé"); 
-        
-        console.log(data); }) 
+        console.log(data); 
+
+        form.reset();
+        alert("Merci, votre message à bien été envoyé !")
+    }) 
         
         .catch(error => { 
             console.error("Erreur :", error); 
