@@ -4,12 +4,9 @@
     font-family: 'Arvo';
 }
 
-body {
-    background-color: #000;
-}
 
 .main {
-    height: 100vh;
+    height: 45vh;
     width: 100%;
     display: flex;
     align-items: center;
@@ -20,8 +17,8 @@ body {
 h1 {
     text-align: center;
     text-transform: uppercase;
-    color: #F1FAEE;
-    font-size: 5rem;
+    color: #000000;
+    font-size: 3.5rem;
 }
 
 .roller {
@@ -181,7 +178,7 @@ h1 {
 
 .card--2 .card__img,
 .card--2 .card__img--hover {
-    background-image: url('../img/coachs.jpg');
+    background-image: url('../img/seniors1.jpg');
 }
 
 .card__like {

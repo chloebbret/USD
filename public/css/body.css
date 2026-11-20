@@ -1,3 +1,19 @@
 body {
-    background-color: black;
+    position: relative;
+    background: none;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+
+    background-image: url("../img/logoBlanc.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    opacity: 0.2;
+    z-index: -1;
+    pointer-events: none;
 }

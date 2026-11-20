@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -16,13 +15,21 @@
 
 
 <div class="navbar">
-    <a href="../pages/accueil.php" class="menu-item" style="font-size:32px;font-weight:bold">
-        US DOMESSIN
-    </a>
+    
+    <a href="../pages/actualites.php" class="menu-item" style="margin-top: 7px;">Actualités</a>
 
-    <a href="../pages/club.php" class="menu-item" style="margin-left:22px;margin-top:7px;">
-        Club
-    </a>
+    <div class="dropdown">
+        <button class="dropbtn menu-item" style="margin-top:7px;">
+            Club
+        </button>
+
+        <div class="dropdown-content">
+            <a href="../pages/histoire.php">Histoire</a>
+            <a href="../pages/infrastructures.php">Infrastructures</a>
+            <a href="../pages/organigramme.php">Organigramme</a>
+            <a href="../pages/manifestations.php">Manifestations</a>
+        </div>
+    </div>
 
     <div class="dropdown">
         <button class="dropbtn menu-item" style="margin-top:7px;">
@@ -30,16 +37,28 @@
         </button>
 
         <div class="dropdown-content">
-            <a href="../pages/u9.php">U9</a>
-            <a href="../pages/u10-u11.php">U10 - U11</a>
-            <a href="../pages/u13.php">U13</a>
             <a href="../pages/u15.php">U15</a>
-            <a href="../pages/u17.php">U17</a>
             <a href="../pages/seniors1.php">SENIORS 1</a>
             <a href="../pages/seniors2.php">SENIORS 2</a>
             <a href="../pages/seniorsf.php">SENIORS F</a>
         </div>
     </div>
+
+    <a href="../pages/accueil.php" class="menu-item">
+        <img src="../img/logoBlanc.png" alt="" style="width: 2.5em">
+    </a>
+
+    <div class="dropdown">
+        <button class="dropbtn menu-item" style="margin-top:7px;">
+            Ecole de foot
+        </button>
+
+        <div class="dropdown-content">
+            <a href="../pages/u9.php">U9</a>
+            <a href="../pages/u10-u11.php">U10 - U11</a>
+            <a href="../pages/u13.php">U13</a>
+        </div>
+    </div>    
     <a href="../pages/contact.php" class="menu-item" style="margin-top: 7px;">Contact</a>
     <a href="https://usd.kreanie.fr" target="_blank" class="menu-item" style="margin-top: 7px;">Boutique</a>
 </div>

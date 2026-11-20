@@ -13,12 +13,7 @@
 <body>
 
 <div class="main">
-    <h1>Bienvenue
-        <div class="roller">
-        <span id="rolltext">A<br/>
-        L'US DOMESSIN<br/>
-        </div>
-    </h1>
+    <h1> Bienvenue A <span style="color: red;">L'US DOMESSIN</div> </h1>
 </div>
 
 <hr style="color: white; width: 80%; margin-top: 5em; margin-bottom: 16em; margin-left: 10em">
@@ -52,7 +47,7 @@
         <div class="card__info">
             <span class="card__category"> ANNONCE </span>
             <h3 class="card__title">Recherche de coachs</h3>
-            <a href="https://www.facebook.com/photo.php?fbid=945347170926011&set=pb.100063522102378.-2207520000&type=3&locale=fr_FR" target="_blank" style="text-decoration: none; color: inherit;">
+            <a href="annonce2" target="_blank" style="text-decoration: none; color: inherit;">
                 Voir l'annonce &nbsp; <i class="fa-solid fa-arrow-right" style="margin-top: 0.2em;"></i>
             </a>
         </div>
